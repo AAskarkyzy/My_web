@@ -1,0 +1,27 @@
+{% extends "template.html" %}
+
+{% block subtitle %}
+Main
+{% endblock %}
+
+{% block main %}
+    <div class="main_n">
+
+        <!-- Форма для ввода комментариев -->
+        <form method="post" action="{{ url_for('main') }}" class="main-form">
+            <label for="comment" class="main-label">Add a Comment:</label>
+            <textarea name="comment" id="comment" rows="4" required></textarea>
+            <button type="submit" class="main-button">Submit Comment</button>
+        </form>
+
+        <!-- Отображение комментариев -->
+        <section class="main-comments">
+            <h2>Comments:</h2>
+            <ul>
+                {% for comment in comments %}
+                    <li>{{ comment.content }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
+{% endblock %}

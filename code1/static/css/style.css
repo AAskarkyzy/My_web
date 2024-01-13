@@ -1,0 +1,203 @@
+body {
+    background-color: #1a1a1a; /* Темный фон */
+    color: #ffffff; /* Белый текст */
+    font-family: 'FreeMono', monospace;
+}
+
+header {
+    background-color: #333; /* Темный фон для заголовка */
+    padding: 50px;
+    text-align: center;
+    font-size: 27px;
+}
+
+h1, h2, h3 {
+    color: #ffd700; /* Золотистый цвет для заголовков */
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Темный фон для навигации */
+    display: flex;
+    justify-content: space-around; /* Распределение пунктов по ширине */
+}
+
+nav li {
+    display: inline;
+    /*margin-right: 20px;*/
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff; /* Белый цвет для ссылок в навигации */
+    font-size: 23px; /*changing the size of text*/
+}
+
+nav a:hover {
+    color: #ffd700; /* Золотистый цвет при наведении на ссылку */
+}
+
+main {
+    padding: 50px;
+}
+
+footer {
+    background-color: #333; /* Темный фон для подвала */
+    padding: 10px;
+    text-align: center;
+    color: #ffffff; /* Белый текст в подвале */
+}
+
+/* Дополнительные стили для особых элементов, например, для блоков "Ночные мысли" */
+.night-thoughts {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Дополнительные стили для фона формы или ввода текста */
+input[type="text"], textarea {
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+
+/* Стили для кнопок */
+button {
+    background-color: #ffd700;
+    color: #1a1a1a;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e5c100;
+}
+
+/*about us page, picture*/
+.centered-image-container {
+    text-align: center;
+  }
+  
+  .centered-image {
+    display: inline-block;
+    height: 650px;
+  }
+
+  /*registration page*/
+.form-group {
+    margin-bottom: 15px;
+}
+
+.registration-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+button[type="submit"] {
+    font-family: 'FreeMono', monospace;
+}
+
+/* Добавьте эти стили в ваш файл стилей (style.css) или в тот, который подключен в шаблоне. */
+
+/* Сброс стилей для элементов формы */
+form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Сброс стилей для полей ввода */
+input {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Оформление группы полей ввода */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Стиль для всех полей ввода (text, email, password и др.) */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    background-color: #e9be588b; /* Задайте желаемый цвет фона */
+    border: 1px solid #ccc; /* Опционально: стиль и цвет границы */
+    border-radius: 4px; /* Опционально: закругление углов */
+}
+
+/* Стиль для кнопки submit */
+button[type="submit"] {
+    font-family: 'Your Chosen Font', sans-serif;
+    background-color: #ffd700;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*наведение*/
+button[type="submit"]:hover {
+    background-color: #aa9102;
+}
+
+/*profile page*/
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.user-info, .comments {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/*main page*/
+form.main-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.main-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px; /* Увеличение размера шрифта для надписи "Add a Comment:" на странице main.html */
+    text-align: left;
+    color: #ffd700;
+}
+
+textarea {
+    width: 70%; /* Ширина поля ввода комментария */
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Расположение поля ввода по центру */
+    resize: vertical; /* Разрешает вертикальное изменение размера */
+    height: 200px;
+}

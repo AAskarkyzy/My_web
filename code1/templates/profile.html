@@ -1,0 +1,27 @@
+{% extends "template.html" %}
+
+{% block subtitle %}
+Profile
+{% endblock %}
+
+{% block main %}
+    <div class="container">
+        <header>
+            <h1>{{ user.username if user else 'Username' }}'s Profile</h1>
+        </header>
+
+        <section class="user-info">
+            <h2>User Information:</h2>
+            <p>Email: {{ user.email if user else 'user@example.com' }}</p>
+        </section>
+
+        <section class="comments">
+            <h2>Comments:</h2>
+            <ul>
+                {% for comment in comments %}
+                    <li>{{ comment.content }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
+{% endblock %}
